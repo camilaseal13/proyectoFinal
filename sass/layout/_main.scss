@@ -1,0 +1,20 @@
+
+.maquina{
+    @extend %maquinas;
+}
+
+.maquina img{
+    width: 100%; // Asegura que la imagen ocupe todo el ancho del contenedor
+    height: auto; // Mantiene la proporción de la imagen
+    object-fit: cover; // Ajusta la imagen para cubrir el contenedor, recortando si es necesario
+}
+
+.maquina h3{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.maquinaCompleta h3{
+    text-align: center;
+    margin-top: 5rem;
+}

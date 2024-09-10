@@ -1,0 +1,559 @@
+/*pagina index*/
+
+header {
+    background-image: url("../images/BackgroundHeader.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative; /* Necesario para el overlay */
+  }
+  
+  
+  .oscurecerFondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(154, 173, 183, 0.73);
+    top: 0;
+    left: 0;
+    z-index: 1; 
+  }
+  
+  .colorTexto {
+    color: rgb(6, 30, 110);
+  }
+  
+  header .d-flex {
+    position: relative;
+    z-index: 2; 
+  }
+  
+  
+  .contenedorHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; 
+  }
+  
+  .navbar-nav {
+    display: flex;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 1rem;
+  }
+  
+  .sectionMain {
+    height: auto; 
+    width: 100%; 
+    max-width: 15rem; 
+    background-color: rgb(84, 133, 133);
+    border-radius: 0.6rem;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  
+  .sectionMain img {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .sectionMain h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.5rem;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 576px) {
+    header {
+      height: auto; 
+    }
+  
+    .oscurecerFondo {
+      background-color: rgba(154, 173, 183, 0.73); 
+    }
+  
+    .contenedorHeader {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      padding-top: 1rem;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0.5rem 0;
+    }
+  
+    .sectionMain {
+      width: 100%; 
+      max-width: none; 
+    }
+  
+    .sectionMain img {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 577px) {
+    .sectionMain {
+      width: 15rem; 
+    }
+  
+    .sectionMain img {
+      width: 90%; 
+    }
+  
+    .contenedorHeader {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0 1rem;
+    }
+  }
+  
+  /*Página proyectos*/
+  
+  /* Estilos generales para el header y la estructura principal */
+  body.proyectos header {
+    background-image: url("../images/backgroundProyectos.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    position: relative; 
+  }
+  
+  .oscurecerFondoproyectos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.13);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .contenedorHeaderProyectos {
+    position: relative; 
+    z-index: 2;
+  }
+  
+  .protesis img {
+    height: 30vh;
+    max-width: 100%; 
+    object-fit: cover; }
+  
+  .protesis {
+    background-color: rgb(135, 139, 146);
+    border-style: groove;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 100%;
+  }
+  
+  .botonProyectos {
+    border: none;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .colorH2 {
+    color: rgb(0, 0, 0);
+  }
+  
+  .custom-container {
+    min-height: 500px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 576px) {
+    .contenedorHeaderProyectos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0.5rem 0;
+    }
+  
+    .custom-container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 577px) {
+    .contenedorHeaderProyectos {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0 1rem;
+    }
+  
+    .protesis {
+      flex: 1 1 30%; 
+    }
+  }
+  
+  @media (min-width: 330px) {
+    .contenedorHeaderProyectos {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .navbar-nav {
+      display: flex;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0 1rem;
+    }
+  }
+  
+  /*página habilidades*/
+  
+  body.habilidades header {
+    background-image: url("../images/habilidadesBackground.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+  header {
+    padding: 1px;
+  }
+  .navbar {
+    margin-bottom: 70px;
+  }
+  
+  .contenedorTabla {
+    padding: 20px; 
+    background-color: #f8f9fa; 
+  }
+  
+  table {
+    margin: 0 auto; 
+    width: 50%; 
+    border: 0.5rem solid;
+  }
+  
+  @media (max-width: 500px) {
+    header {
+      padding: 1rem;
+    }
+  
+    .oscurecerFondoHabilidades {
+      background-color: rgba(154, 173, 183, 0.73);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  
+    .navbar {
+      padding: 0 1rem; /* Añade relleno horizontal al navbar */
+    }
+  
+    .navbar-collapse {
+      text-align: center; /* Centra el texto del navbar */
+    }
+  
+    .navbar-nav {
+      flex-direction: column; /* Cambia la dirección de los elementos de navegación a columna */
+      padding-top: 1rem;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0.5rem 0; /* Añade espacio vertical entre los ítems de navegación */
+    }
+  
+    .contenedorTabla {
+      padding: 0 1rem; /* Añade relleno horizontal a la tabla */
+    }
+  
+    .table {
+      font-size: 0.9rem; /* Ajusta el tamaño de la fuente de la tabla para pantallas pequeñas */
+    }
+  
+    .footer {
+      padding: 1rem 0;
+    }
+  }
+  
+  /* Responsive para pantallas de 320px o menos */
+  
+  @media (max-width: 320px) {
+    header {
+      padding: 0.5rem;
+    }
+  
+    .navbar {
+      padding: 0 0.5rem; /* Reduce el relleno horizontal del navbar */
+    }
+  
+    .table {
+      font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente de la tabla */
+    }
+  
+    .footer {
+      padding: 0.5rem 0;
+    }
+  
+    .oscurecerFondoHabilidades {
+      background-color: rgba(154, 173, 183, 0.8); /* Aumenta la opacidad para pantallas muy pequeñas */
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0.25rem 0; /* Reduce el espacio vertical entre los ítems de navegación */
+    }
+  }
+  
+  /* Página sobremi*/
+  
+  /* Página sobremi */
+  
+    .contenedorSobremi {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background-color: #7493b3;
+      width: 90%;
+      height: auto; /* Ajusta la altura automáticamente */
+      margin: 0 auto; /* Centra el contenedor */
+    }
+  
+  .perfil {
+    text-align: center;
+    background-color: #d2deeb;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px; /* Ancho máximo del perfil */
+  }
+  
+  .fotoPerfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .perfil h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .perfil p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .perfil strong {
+    color: #007bff;
+  }
+  
+  /* Responsive para pantallas de 500px o menos */
+  
+  @media (max-width: 500px) {
+    .contenedorSobremi {
+      padding: 5px; /* Reduce el padding para pantallas pequeñas */
+    }
+  
+    .perfil {
+      padding: 20px; /* Reduce el padding del perfil */
+      width: 90%; /* Ajusta el ancho del perfil al 90% del contenedor */
+    }
+  
+    .fotoPerfil {
+      width: 120px; /* Reduce el tamaño de la foto de perfil */
+      height: 120px;
+    }
+  
+    .perfil h1 {
+      font-size: 1.5rem; /* Ajusta el tamaño de la fuente del encabezado */
+    }
+  
+    .perfil p {
+      font-size: 1.2rem; /* Ajusta el tamaño de la fuente del párrafo */
+    }
+  }
+  
+  /* Responsive para pantallas de 320px o menos */
+  
+  @media (max-width: 320px) {
+    .contenedorSobremi {
+      padding: 2px; /* Reduce aún más el padding para pantallas muy pequeñas */
+    }
+  
+    .perfil {
+      padding: 10px; /* Reduce el padding del perfil */
+      width: 100%; /* Ajusta el ancho del perfil al 100% del contenedor */
+    }
+  
+    .fotoPerfil {
+      width: 100px; /* Reduce aún más el tamaño de la foto de perfil */
+      height: 100px;
+    }
+  
+    .perfil h1 {
+      font-size: 1.2rem; /* Ajusta el tamaño de la fuente del encabezado */
+    }
+  
+    .perfil p {
+      font-size: 1rem; /* Ajusta el tamaño de la fuente del párrafo */
+    }
+  }
+  
+  /* Página de contacto */
+  
+  /* Estilos generales */
+  .contenedorContacto {
+    max-width: 70%;
+    margin: 0 auto;   
+    padding: 50px;    
+    border: 0.5rem solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #c7cbcb; 
+  }
+  
+  /* Estilos para el campo de leyenda */
+  legend {
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+  }
+  
+  /* Estilos para la tabla del formulario */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px; 
+    vertical-align: top; 
+  }
+  
+  label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+  }
+  
+  input[type="submit"] {
+    background-color: #33c7ac; 
+    color: #fff; 
+    border: solid;
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    margin-top: 10px; 
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3; 
+  }
+  
+  .headerinfo {
+    width: 100%;
+    height: auto; /* Cambié esto para evitar que el header sea demasiado alto */
+  }
+  
+  /* Media Queries para responsividad */
+  
+  /* Pantallas de hasta 320px */
+  @media (max-width: 320px) {
+    .contenedorContacto {
+      padding: 20px;
+      border-width: 1px;
+    }
+  
+    legend {
+      font-size: 1.5rem; 
+    }
+  
+    input[type="submit"] {
+      padding: 8px 16px; 
+      font-size: 0.875rem; 
+    }
+  
+    table, td {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Pantallas de hasta 800px */
+  @media (max-width: 800px) {
+    .contenedorContacto {
+      max-width: 90%;
+      padding: 30px;
+    }
+  
+    legend {
+      font-size: 1.75rem; 
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    input[type="submit"] {
+      padding: 10px 20px; 
+      font-size: 1rem; 
+    }
+  
+    label {
+      font-size: 0.875rem;
+    }
+  }
+  

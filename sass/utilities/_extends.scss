@@ -1,0 +1,17 @@
+%flexIndex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:$colorH2;
+}
+
+%maquinas{
+    height: auto; 
+    width: 100%; 
+    max-width: 20rem; 
+    background-color: rgb(84, 133, 133);
+    border-radius: 0.4rem;
+    margin: 1rem;
+    padding: 0.9rem;
+  }
+

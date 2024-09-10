@@ -1,0 +1,314 @@
+@charset "UTF-8";
+header {
+  background-image: url("../images/BackgroundHeader.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative; /* Necesario para el overlay */
+}
+
+body.proyectos header {
+  background-image: url("../images/backgroundProyectos.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95vh;
+  position: relative;
+}
+
+body.habilidades header {
+  background-image: url("../images/habilidadesBackground.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.oscurecerFondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(154, 173, 183, 0.73);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.oscurecerFondoproyectos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 1, 1, 0.217);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.oscurecerFondoHabilidades {
+  background-color: rgba(154, 173, 183, 0.73);
+  position: absolute;
+  z-index: 1;
+}
+
+.flexIndex {
+  flex-direction: column;
+}
+
+h2 {
+  color: rgb(44, 55, 212);
+}
+
+.contenedorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.protesis img {
+  height: 35vh;
+  max-width: 90%;
+  object-fit: initial;
+}
+
+.protesis {
+  background-color: rgb(135, 139, 146);
+  border-style: groove;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 100%;
+}
+
+.contenedorInovacion {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.botonProyectos {
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contenedorTabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.tabla {
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #f9f9f9;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tabla th, .tabla td {
+  border: 1px solid #d1d1d1;
+  padding: 12px;
+  text-align: center;
+}
+.tabla th {
+  background-color: #4a90e2;
+  color: #ffffff;
+  font-weight: bold;
+}
+.tabla tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.tabla tr:hover {
+  background-color: #c97676;
+}
+
+/* Estilo para el contenedor principal */
+.contenedorSobremi {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la vista */
+  background-color: #e0f7fa; /* Color de fondo suave, similar a un azul claro medicinal */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el perfil */
+.perfil {
+  text-align: center; /* Centra el texto */
+  background-color: #ffffff; /* Fondo blanco para el perfil */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espaciado interno */
+  max-width: 500px; /* Ancho máximo para el perfil */
+  width: 100%; /* Asegura que el perfil no exceda el contenedor */
+}
+
+/* Estilo para la imagen de perfil */
+.fotoPerfil {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+.fotoPerfil:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo para el botón */
+button {
+  background-color: rgb(138, 205, 125);
+  color: #ffffff;
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+  background-color: #388e3c; /* Color de fondo verde más oscuro al pasar el cursor */
+}
+
+.contenedorContacto {
+  max-width: 50%;
+  height: 35rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 0.5rem solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #599090;
+}
+
+legend {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la tabla del formulario */
+table {
+  width: 90%;
+  height: 60vh;
+  border-collapse: separate;
+  margin: 1rem;
+}
+
+td {
+  padding: 1px;
+  vertical-align: top;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=number] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type=submit] {
+  background-color: #33c7ac;
+  color: #fff;
+  border: solid;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+.headerinfo {
+  width: 100%;
+  height: auto; /* Cambié esto para evitar que el header sea demasiado alto */
+}
+
+.maquina img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.maquina h3 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.maquinaCompleta h3 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.flexIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(44, 55, 212);
+}
+
+.maquina {
+  height: auto;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgb(84, 133, 133);
+  border-radius: 0.4rem;
+  margin: 1rem;
+  padding: 0.9rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .contenedorGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    row-gap: 1rem;
+    width: 90%;
+    margin: auto;
+  }
+  .maquinaCompleta {
+    grid-column: 1/4;
+  }
+  .textoMain {
+    margin: 2rem;
+  }
+  .contenedorInovacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .contenedorGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .maquinaCompleta {
+    grid-column: unset;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

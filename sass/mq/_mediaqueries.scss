@@ -1,0 +1,37 @@
+@media only screen and (min-width: 600px){
+    .contenedorGrid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        row-gap: 1rem;
+        width: 90%;
+        margin: auto;  
+    }
+    .maquinaCompleta{
+        grid-column: 1 / 4;
+    }
+
+    .textoMain{
+       margin: 2rem;
+    }
+
+    .contenedorInovacion {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4rem;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 700px){
+
+    .contenedorGrid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .maquinaCompleta{
+        grid-column: unset;
+    }
+}
+
